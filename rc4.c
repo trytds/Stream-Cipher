@@ -18,7 +18,9 @@ void RC4_key(RC4_KEY* rc4_key, unsigned char* key, int* keylength) {
 	}
 }
 
-
+/*
+RC4是伪随机数生成器异或运算组成 给定密钥 伪随机数生成器接受产生S盒 加密数据
+*/
 /*Generate the key stream which length is the same as plaintext's and encrypt the plaintext and output the ciphertext.*/
 void RC4(RC4_KEY* rc4_key, unsigned char* plaintext, int* plaintext_length, unsigned char* ciphertext) {
 	int i = 0, j = 0, k = 0, n, temp;
@@ -37,3 +39,4 @@ void RC4(RC4_KEY* rc4_key, unsigned char* plaintext, int* plaintext_length, unsi
 		*(ciphertext + k) = *(plaintext + k) ^ n;
 	}
 }
+

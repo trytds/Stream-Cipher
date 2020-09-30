@@ -18,9 +18,6 @@
     <ClCompile Include="server.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="learn.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="rc4.c">
       <Filter>源文件</Filter>
     </ClCompile>

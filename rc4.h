@@ -10,12 +10,10 @@ typedef struct RC4_KEY_S {
 }RC4_KEY;
 
 //√‹‘ø∑÷≈‰∫Ø ˝
-void RC4_key(RC4_KEY* rc4_key, int* keylength)
+void RC4_key(RC4_KEY* rc4_key, int* keylength);
 
 //º”√‹
-//void RC4(RC4_KEY* rc4_key, unsigned char* plaintext, int* plaintext_length, int* ciphertext_length);
-
-void RC4(RC4_KEY* rc4_key, unsigned char* plaintext, int* plaintext_length, unsigned char* ciphertext)
+void RC4(RC4_KEY* rc4_key, unsigned char* plaintext, int* plaintext_length, unsigned char* ciphertext);
 
 
 #endif // !RC4_H

@@ -5,16 +5,16 @@ int main()
 {
 	int i, x;
 	int* p;
-	unsigned char plaintext[TEXT_LENGTH];
-	unsigned char key[KEY_LENGTH];
-	unsigned char ciphertext[TEXT_LENGTH];
+	unsigned char plaintext[TEXT_LENGTH]; //定义明文数组
+	unsigned char key[KEY_LENGTH]; //定义密钥数组
+	unsigned char ciphertext[TEXT_LENGTH]; //定义密文数组
 
     RC4_KEY rc4_key;
 
     printf("------------------------------\n----------RC4 CIPHER----------\n------------------------------\n");
     printf("Please enter the plaintext(%d characters): ", TEXT_LENGTH);
     for (i = 0; i < TEXT_LENGTH; i++)
-        scanf("%c", &plaintext[i]);
+        scanf_s("%c", &ciphertext[i]);
 
     /*Encryption*/
     x = KEY_LENGTH;

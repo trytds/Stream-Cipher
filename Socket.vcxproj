@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="learn.cpp" />
     <ClCompile Include="rc4.c" />
     <ClCompile Include="server.c" />
     <ClCompile Include="test.c" />
